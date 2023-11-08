@@ -216,3 +216,46 @@
     font-weight: Bold;
     color: yellow;
 }
+
+
+
+@media screen and (max-width:500px) {
+
+    .UpperNav-main-div{
+        width: 100%;
+    }
+    .BreakingNews-div{
+        display: none;
+    
+    }
+    .BreakingNews-display-div{
+        font-size: 0.61rem;
+        margin-left: 1vw;
+        width: 60vw;
+        font-weight: bold;
+    }
+    .Display-User-icon-div{
+        margin-left: 3vw;
+    }
+    .Display-Menu-icon-div{
+        margin-left: 3vw;
+    }
+    .Admin-para{
+       font-size: 0.6rem;
+       margin-left: 3vw;
+    }
+    .Admin-Container{
+        width: 70vw;
+    }
+    .Side-Menu-Tap-on-true{
+        width: 43vw;
+    }
+    .Side-Menu-Tap-on-false{
+        right: -43vw;
+    }
+    .Side-Menu-Tap-on-true-layer{
+        width: 57vw;
+    
+    }
+
+}

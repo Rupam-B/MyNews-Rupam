@@ -223,3 +223,99 @@
    font-size: 0.8rem;
     
 }
+
+
+@media screen and (max-width:500px) {
+    .Home-Main-div{
+        width: 100%;
+        padding: 1rem;
+        height: 205vh;
+    }
+    .Home-sub-caraousel-div{
+        width: 100%;
+        height: 25vh;
+    }
+    .carousel-card{
+        width: 100%;
+        height: 25vh;
+        display: flex;
+    }
+    .carousel-Left-image-div{
+        width: 65%;
+        height: 35vh;
+        position: relative;
+    }
+    .carousel-Left-image-div img{
+        height: 35vh;
+    }
+    .carousel-Left-image-div::after{
+        height: 35vh;  
+    }
+    .carousel-Right-image-div{
+        left: 60vw;
+    }
+    .carousel-Left-image-div-heading{
+        bottom: 7vh;
+        height: 10vh;
+        width: 55vw;
+        
+    }
+    .carousel-Left-image-div-heading h2{
+        font-size: 0.9rem;       
+    }
+    .carousel-Right-image-div-one-heading{
+        width: 25vw;
+    }
+    .carousel-Right-image-div-one-heading h2{
+        font-size: 0.5rem;
+    }
+    .carousel-Right-image-div-two-heading{
+        bottom: 10vh;
+        width: 26vw;
+    }
+    .carousel-Right-image-div-two-heading h2{
+        font-size: 0.5rem;
+    }
+    /* ---- */
+
+    .Home-second-div{
+        height: 60vh;
+        margin-top: 2vh;
+    }
+    .Home-second-div-left h5{
+        font-size: 0.8rem;
+    }
+    .Home-second-div-left p{
+        font-size: 0.6rem;
+    }
+    .Home-second-div-left img{
+        width: 100%;
+        height: 50%;
+    }
+    .Home-second-div-right-one-inner h6{
+        font-size: 0.6rem;
+    }
+    .Home-second-div-right-one-inner p{
+        font-size: 0.5rem;
+        margin-bottom: 0.6vh;
+    }
+    .Home-second-div-right-one img{
+        height: 80%;
+        width: 15vw;
+        margin-right: 0.5vw;
+    }
+
+    /* ------ */
+    .Home-third-div{
+        height:110vh;
+    }
+    .Home-third-div h5{
+        font-size: 0.8rem;
+    }
+    .Home-third-div p{
+        font-size: 0.6rem;
+    }
+    .Home-third-div-content-part img{
+        height: 55%;   
+    }
+}

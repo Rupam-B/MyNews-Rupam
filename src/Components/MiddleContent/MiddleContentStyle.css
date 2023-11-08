@@ -40,3 +40,20 @@
     height: 12vh;
     margin-right: 0.5vw;
 }
+
+@media screen and (max-width:500px) {
+    .MiddleContent-divs h5{
+        font-size: 0.6rem;
+    
+    }
+    .MiddleContent-divs p{
+        font-size: 0.5rem;
+        margin-bottom: 1vh;
+    
+    }
+    .MiddleContent-divs-interior img{
+        width: 13vw;
+        height: 12vh;
+        margin-right: 0.5vw;
+    }
+}

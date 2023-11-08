@@ -110,3 +110,31 @@
     color: white;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width:500px) {
+    .LowerNav-Main-div{
+        width: 98.9vw;
+        height: 6vh;
+     
+        padding-top: 2vh;
+    }
+    .LowerNav-Sub-div{
+        width: 100%;
+    }
+    .LowerNav-Sub-div-second{
+        display: none;
+    }
+    .LowerNav-Sub-div ul a{
+        font-size: 0.6rem;
+     }
+    .LowerNav-Sub-div ul li{
+        width: 15vw;
+        margin-right: 1vw;
+     }
+    .LowerNav-Sub-div ul{
+        width: 100%;
+        overflow: hidden;
+        
+     }
+
+}

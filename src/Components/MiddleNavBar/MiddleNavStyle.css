@@ -22,3 +22,20 @@
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width:500px) {
+    .MiddleNav-main-div{
+        width: 98.5vw;
+        height: 12vh;
+        padding: 2vh 2rem;
+        display: flex;
+    }
+    .MiddleNav-first-img{
+        height: 5vh;
+        width: 45vw;
+    }
+    .MiddleNav-second-img{
+        height: 8vh;
+        width: 70vw;
+    }
+}

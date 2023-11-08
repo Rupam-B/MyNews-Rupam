@@ -165,3 +165,39 @@
  .Footter-Lower-div-two ul li:hover{
     color: yellow;
  }
+
+ @media screen and (max-width:500px) {
+    .Footter-main-div{
+        height: 60vh;
+        padding: 1rem;
+    }
+    .Footter-top-div{
+        height: 70%;
+    }
+    .Footter-First-div p{
+        font-size: 0.8rem;
+    }
+    .Footter-First-div h5::after{
+        width: 9vw;
+    }
+    .Footter-Third-div h5::after{
+        width: 9vw;
+    }
+    .Footter-Third-div p{
+        font-size: 0.8rem;
+    }
+    .Footter-Second-div{
+       display: none;
+    }
+    .Footter-Lower-div-one p{
+        font-size: 0.6rem;
+    }
+    .Footter-Lower-div-two ul li{
+        width: 20vw;
+        font-size: 0.7rem;
+        margin: 0 0.2rem;
+     }
+    .Footter-Lower-div-two ul{
+       padding-left: 0;
+     }
+ }

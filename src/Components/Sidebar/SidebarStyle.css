@@ -116,3 +116,13 @@
 }
 
 /* -------- */
+
+@media screen and (max-width:500px) {
+    .Sidebar-Main-div{
+        display: none;
+    }
+    .Sidebar-Main-div-substitute{
+        display: none;
+    
+    }
+}
