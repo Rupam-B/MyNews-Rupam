@@ -82,6 +82,8 @@ const LowerNavBar = () => {
         ></i>
       </div>
       <div
+      onMouseEnter={() => setShowDiv(true)}
+      onMouseLeave={() => setShowDiv(false)}
         className={
           showDiv ? "LowerNav-Hover-div-show" : "LowerNav-Hover-div-hide"
         }

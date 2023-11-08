@@ -106,8 +106,10 @@ const UpperNavbar = () => {
       <div className='BreakingNews-display-div'>{displayText}</div>
       <i className="fa-solid fa-angle-left Display-angle-div"></i>
       <i className="fa-solid fa-angle-right Display-angle-div"></i>
+      <div className='admin-icon-div'>
       <i onClick={()=>setAdminShow(true)} className="fa-solid fa-circle-user Display-User-icon-div"></i>
       <p className={isadmin?'Admin-para':'Admin-para-false'}>admin</p>
+      </div>
       <i onClick={()=>setToggleSidebar(true)} className="fa-solid fa-bars Display-Menu-icon-div"></i>
       <div className={toggleSidebar?'Side-Menu-Tap-on-true':'Side-Menu-Tap-on-false'}>
         <div className='Side-Cross-div'>

@@ -70,6 +70,10 @@
 }
 .LowerNav-Sub-kahabar{
     margin-left: 2vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
 }
 .LowerNav-Sub-kahabar:hover{
     color: yellow;
