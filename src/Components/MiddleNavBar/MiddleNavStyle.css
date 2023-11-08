@@ -1,7 +1,6 @@
 .MiddleNav-main-div{
-    width: 100vw;
+    width: 98.5vw;
     height: 20vh;
-    /* border: 5px solid yellow; */
     padding: 2vh 2rem;
     display: flex;
 }

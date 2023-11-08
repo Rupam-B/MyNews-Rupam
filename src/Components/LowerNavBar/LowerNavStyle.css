@@ -1,13 +1,14 @@
 .LowerNav-Main-div{
-    width: 100vw;
+    width: 98.9vw;
     height: 10vh;
     background-color: rgb(36, 36, 36,0.9);
+ 
     padding-top: 2vh;
     display: flex;
     position: relative;
 }
 .LowerNav-Main-div-fixed{
-    width: 100vw;
+    width: 99vw;
     height: 10vh;
     background-color: rgb(36, 36, 36);
     padding-top: 2vh;

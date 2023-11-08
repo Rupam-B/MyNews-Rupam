@@ -1,12 +1,12 @@
 .MiddleContent-main-div{
     height: 85vh;
-    width: 100vw;
+    width: 98.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .MiddleContent-sub-div{
-    width: 95%;
+    width: 98%;
     height: 90%;
     border: 1px solid rgb(22, 22, 22,0.2);
     padding: 2vh 2vw;
