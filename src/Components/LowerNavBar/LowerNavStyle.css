@@ -1,0 +1,107 @@
+.LowerNav-Main-div{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(36, 36, 36,0.9);
+    padding-top: 2vh;
+    display: flex;
+    position: relative;
+}
+.LowerNav-Main-div-fixed{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(36, 36, 36);
+    padding-top: 2vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+}
+.LowerNav-Sub-div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.LowerNav-Sub-div ul{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.LowerNav-Sub-div ul a{
+   text-decoration: none;
+}
+.LowerNav-Sub-div ul li:hover{
+   color: yellow;
+   transform: scale(1.1);
+}
+.LowerNav-Sub-div ul li{
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+/* ------------ */
+.LowerNav-Sub-div-second{
+
+    width: 30vw;
+    height: 90%;
+    margin-left: 6vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 1vh 0 1vh 6vw;
+}
+.LowerNav-Sub-div-second i{
+   margin: 0 1vw;
+   margin-bottom: 2vh;
+}
+.LowerNav-Sub-div-second p{
+   font-weight: bold;
+}
+
+.LowerNav-Sub-div-second i{
+   font-size: 1.2rem;
+   margin-bottom: 1.5vh;
+}
+.LowerNav-Sub-div-second i:hover{
+   cursor: pointer;
+}
+.LowerNav-Sub-kahabar{
+    margin-left: 2vw;
+}
+.LowerNav-Sub-kahabar:hover{
+    color: yellow;
+    cursor: pointer;
+    transition:  color 1s ease-in-out;
+}
+
+/* --------- */
+.LowerNav-Hover-div-show{
+    height: 30vh;
+    width: 90vw;
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    background: rgb(60, 60, 60);
+    z-index: 2;
+    display: flex;
+    padding: 1vh 2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.LowerNav-Hover-div-hide{
+    display: none;
+}
+.LowerNav-Hover-div-show-one{
+
+    width: 28vw;
+    height: 25vh;
+    padding: 0 1vw;
+    text-wrap: wrap;
+}
+.LowerNav-Hover-div-show-one p{
+    color: white;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,226 @@
+.Home-Main-div{
+    height: 250vh;
+    width: 69.5vw;
+    /* border: 3px solid red; */
+    padding: 1rem;
+}
+.Home-sub-div{
+    height: 98%;
+    width: 99%;
+    /* border: 5px solid greenyellow; */
+    z-index: -1;
+}
+.Home-sub-caraousel-div{
+    width: 100%;
+    height: 45vh;
+}
+.carousel-card{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+}
+.carousel-Left-image-div{
+    width: 65%;
+    height: 45vh;
+    position: relative;
+}
+.carousel-Left-image-div img{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    object-fit: cover;
+}
+.carousel-Left-image-div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  
+}
+.carousel-Left-image-div-heading{
+    position: absolute;
+    bottom: 5vh;
+    height: 10vh;
+    text-wrap: wrap;
+    width: 35vw;
+    padding-left: 2vw;
+    color: white;
+    z-index: 2;
+}
+.carousel-Left-image-div-heading h2{
+    text-wrap: wrap;
+    width: 90%;
+    font-weight: bolder;
+    z-index: 2;
+   
+}
+.carousel-Right-image-div{
+    height: 45vh;
+    width: 36%;
+    bottom: 45vh;
+    left: 43.7vw;
+    position: relative;
+    padding: 0 0 0 1rem;
+}
+.carousel-Right-image-div-one{
+    height:49%;
+    width: 95%;
+    position: relative;
+}
+.carousel-Right-image-div-one::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.carousel-Right-image-div-one img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-Right-image-div-one-heading{
+    position: absolute;
+    bottom: 1vh;
+    height: 5vh;
+    text-wrap: wrap;
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+    color: white;
+    z-index: 2;
+}
+.carousel-Right-image-div-one-heading h2{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/* ------------- */
+.carousel-Right-image-div-two{
+    height:49%;
+    width: 95%;
+    margin-top: 1vh;
+    position: relative;
+}
+.carousel-Right-image-div-two::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.carousel-Right-image-div-two img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-Right-image-div-two-heading{
+    position: absolute;
+    bottom: 1vh;
+    height: 5vh;
+    text-wrap: wrap;
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+    color: white;
+    z-index: 2;
+}
+.carousel-Right-image-div-two-heading h2{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+/* ---------- */
+.Home-second-div{
+    width: 100%;
+    height: 70vh;
+    border: 1px solid rgb(22, 22, 22,0.2);
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home-second-div-left{
+    width: 48%;
+    height: 90%;
+    padding-left: 1vw;
+}
+.Home-second-div-left img{
+    width: 100%;
+    height: 60%;
+}
+.Home-second-div-left h5{
+    font-weight: bolder;
+}
+.Home-second-div-right{
+    width: 48%;
+    height: 90%;
+}
+.Home-second-div-right-one{
+    width: 100%;
+    height: 23%;
+    margin-bottom: 2vh;
+    display: flex;
+    padding-right: 0.5vw;
+}
+.Home-second-div-right-one img{
+    height: 100%;
+    width: 10vw;
+    margin-right: 0.5vw;
+}
+.Home-second-div-right-one-inner h6{
+    font-weight: bold;
+}
+.Home-second-div-right-one-inner p{
+    font-size: 0.8rem;
+}
+
+/* ------------ */
+.Home-third-div{
+    width: 100%;
+    height: 125vh;
+    border: 1px solid rgb(22, 22, 22,0.2);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 3vh 0;
+    padding-left: 2vw;
+}
+.Home-third-div h5{
+    font-weight: bolder;
+}
+.Home-third-div-content{
+    width: 96%;
+    height: 45%;
+    display: flex;
+    margin-bottom: 2vh;
+    
+}
+.Home-third-div-content-part{
+    width: 50%;
+    height: 100%;
+    padding-right: 1vw;
+}
+.Home-third-div-content-part img{
+    width: 100%;
+    height: 65%;
+    
+}
+.Home-third-div-content-part h5{
+   font-weight: bolder;
+    
+}
+.Home-third-div-content-part p{
+   font-size: 0.8rem;
+    
+}

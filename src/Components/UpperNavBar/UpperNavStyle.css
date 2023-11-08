@@ -1,0 +1,209 @@
+.UpperNav-main-div{
+    width: 100vw;
+    height: 6vh;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+.Display-Date-div{
+    font-size: 0.8rem;
+    margin-right: 0.5vw;
+    color: red;
+}
+.BreakingNews-div{
+    font-size: 1.4rem;
+    margin-left: 1vw;
+
+}
+.BreakingNews-display-div{
+    font-size: 1.4rem;
+    margin-left: 1vw;
+    width: 60vw;
+    margin-right: 2vw;
+    font-weight: bold;
+}
+
+.Display-angle-div{
+    font-size: 0.8rem;
+    margin-right: 0.5vw;
+    color: red;
+    border: 1px solid rgb(128, 128, 128,0.3);
+    padding: 0.2rem;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+.Display-User-icon-div{
+    font-size: 1.2rem;
+    margin-left: 6vw;
+    cursor: pointer;
+}
+.Display-Menu-icon-div{
+    font-size: 1.2rem;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.Side-Menu-Tap-on-true{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 23vw;
+    background: rgb(0, 0, 0,0.8);
+    color: white;
+    z-index: 2;
+    transition: right 1s ease;
+}
+.Side-Menu-Tap-on-false{
+    position: fixed;
+    top: 0;
+    right: -23vw;
+    height: 100vh;
+    width: 23vw;
+    background: black;
+    color: white;
+    z-index: 2;
+    transition: right 1s ease;
+}
+.Side-Menu-Tap-on-true-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 76vw;
+    background: rgb(0, 0, 0,0.2);
+    z-index: 3;
+    cursor: pointer;
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 1s ease-in-out;
+    align-items: center;
+
+}
+.Side-Menu-Tap-on-false-layer{
+    opacity: 0; 
+    pointer-events: none;
+    visibility: hidden; 
+    transition: opacity 1s ease-in-out; 
+}
+
+/* -------- */
+.Side-Cross-div{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.Side-Cross-div i{
+ cursor: pointer;
+ color: red;
+}
+.Side-Cross-div i:hover{
+ font-size: 2.2rem;
+}
+.Side-div-content{
+    width: 100%;
+    height: 90%;
+   padding-left: 9vw;
+    margin-top: 5vh;
+}
+.Side-div-content h4{
+    margin-bottom: 7vh;
+}
+.Side-div-content h4:hover{
+    transform: scale(1.01);
+    color: yellow;
+    cursor: pointer;
+}
+
+/* --------- */
+.Admin-div{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: top 1s ease-in-out;
+}
+.Admin-div-hide{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: 3;
+    top: 200vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: top 1s ease-in-out; 
+}
+.Admin-Container{
+    width: 45vw;
+    height: 60vh;
+    background-color: rgb(0, 0, 0,0.9);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.Admin-Container h5{
+    font-weight: bold;
+    font-size: 2rem;
+    color: yellow;
+}
+.Admin-Container input{
+   margin-top: 3vh;
+}
+.Admin-Container i{
+   color: red;
+   font-weight: bolder;
+   position: absolute;
+   right: 1vw;
+   top: 1vh;
+   font-size: 2rem;
+}
+.Admin-Container i:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+}
+.Admin-Container button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    border: none;
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+}
+.Admin-para{
+    position: absolute;
+    right: 4.5vw;
+    top: 4vh;
+    color: blue;
+    font-weight: bold;
+}
+.Admin-para-false{
+    display: none;
+}
+.Admin-No{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Admin-Yes{
+    font-size: 2rem;
+    font-weight: Bold;
+    color: yellow;
+}

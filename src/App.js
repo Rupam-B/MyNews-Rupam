@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Footter from "./Components/Footer/Footter";
+import Home from "./Components/Home/Home";
+import LowerNavBar from "./Components/LowerNavBar/LowerNavBar";
+import MiddleContent from "./Components/MiddleContent/MiddleContent";
+import MiddleNavBar from "./Components/MiddleNavBar/MiddleNavBar";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import UpperNavbar from "./Components/UpperNavBar/UpperNavbar";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import OtherHomeComps from "./Components/OtherHomeComps/OtherHomeComps";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UpperNavbar/>
+      <MiddleNavBar/>
+      <LowerNavBar/>
+      <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/chhattisgarh" element={<OtherHomeComps/>}/>
+      </Routes>
+      <Sidebar/>
+      <MiddleContent/>
+      <Footter/>
+      <ToastContainer/>
     </div>
   );
 }
