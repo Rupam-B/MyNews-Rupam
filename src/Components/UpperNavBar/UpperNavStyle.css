@@ -14,6 +14,8 @@
 .BreakingNews-div{
     font-size: 1.4rem;
     margin-left: 1vw;
+    width:15vw;
+    /* border: 1px solid blue; */
 
 }
 .BreakingNews-display-div{
