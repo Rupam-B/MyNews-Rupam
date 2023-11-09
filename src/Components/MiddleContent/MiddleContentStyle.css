@@ -32,6 +32,10 @@
     /* margin-top: -2vh; */
 
 }
+.MiddleContent-divs p{
+    margin-bottom: 0.5vh;
+
+}
 .MiddleContent-divs-interior{
     display: flex;
 }

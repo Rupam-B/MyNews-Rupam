@@ -15,7 +15,7 @@
 .Footter-First-div{
     position: relative;
     padding: 1rem;
-    width: 50vw;
+    width: 30vw;
     
     padding-left: 3vw;
     padding-right: 3vw;
@@ -42,7 +42,7 @@
     padding:1rem;
     padding-left: 3vw;
     padding-right: 3vw;
-    width: 100vw;
+    width: 120vw;
     
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@
     padding-left: 3vw;
     padding-right: 3vw;
    
-    width: 22vw;
+    width: 26vw;
 }
 .Footter-Second-div-one p{
     margin-top: 4vh;
@@ -74,7 +74,7 @@
     padding-left: 3vw;
     padding-right: 3vw;
     
-    width: 22vw;
+    width: 27vw;
     
     
 }
@@ -85,7 +85,7 @@
     content: '';
     position: absolute;
     top: 6vh;
-    left: 28vw;
+    left: 32vw;
     width: 3vw;
     height: 0.5vh;
     background-color: white;

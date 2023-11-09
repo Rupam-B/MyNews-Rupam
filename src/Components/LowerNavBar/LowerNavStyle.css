@@ -60,6 +60,10 @@
 }
 .LowerNav-Sub-div-second p{
    font-weight: bold;
+
+   width: 10vw;
+   display: flex;
+   justify-content: center;
 }
 
 .LowerNav-Sub-div-second i{
@@ -70,11 +74,13 @@
    cursor: pointer;
 }
 .LowerNav-Sub-kahabar{
-    margin-left: 2vw;
+    /* margin-left: 2vw; */
     height: 10vh;
     display: flex;
     align-items: center;
     margin-top: 1vh;
+    width: 8vw;
+    justify-content: center;
 }
 .LowerNav-Sub-kahabar:hover{
     color: yellow;

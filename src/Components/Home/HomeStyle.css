@@ -159,6 +159,9 @@
 .Home-second-div-left h5{
     font-weight: bolder;
 }
+.Home-second-div-left p{
+    margin-bottom: 0.5vh;
+}
 .Home-second-div-right{
     width: 48%;
     height: 90%;
@@ -180,6 +183,7 @@
 }
 .Home-second-div-right-one-inner p{
     font-size: 0.8rem;
+    margin-bottom: 0.5vh;
 }
 
 /* ------------ */
@@ -221,6 +225,7 @@
 }
 .Home-third-div-content-part p{
    font-size: 0.8rem;
+   margin-bottom: 0.5vh;
     
 }
 
