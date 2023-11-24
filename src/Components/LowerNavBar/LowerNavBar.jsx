@@ -3,6 +3,7 @@ import "./LowerNavStyle.css";
 import { Link } from "react-router-dom";
 
 const LowerNavBar = () => {
+
   const [showDiv, setShowDiv] = useState(false);
 
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -65,9 +66,9 @@ const LowerNavBar = () => {
         </ul>
       </div>
       <div className="LowerNav-Sub-div-second">
-        <i class="fa-solid fa-moon"></i>
+        <i className="fa-solid fa-moon"></i>
         <p>Search for</p>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i className="fa-solid fa-magnifying-glass"></i>
         <p
           onMouseEnter={() => setShowDiv(true)}
           onMouseLeave={() => setShowDiv(false)}
@@ -78,7 +79,7 @@ const LowerNavBar = () => {
         <i
           onMouseEnter={() => setShowDiv(true)}
           onMouseLeave={() => setShowDiv(false)}
-          class="fa-solid fa-angle-down"
+          className="fa-solid fa-angle-down"
         ></i>
       </div>
       <div

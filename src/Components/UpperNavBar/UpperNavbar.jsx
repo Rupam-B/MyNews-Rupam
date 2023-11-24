@@ -2,12 +2,28 @@ import React, { useEffect, useState } from 'react'
 import './UpperNavStyle.css'
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useDispatch } from 'react-redux';
+import { carOneData } from '../../Redux/action';
+import { carTwoData } from '../../Redux/action';
+import { carThreeData } from '../../Redux/action';
 
 
 const UpperNavbar = () => {
 
+  const dashboardDispatch = useDispatch();
+
   const [adminShow, setAdminShow]=useState(false)
+  const [dashboardShow, setDashboardShow]=useState(false)
   const [isadmin, setIsAdmin]=useState(false)
+  const [caroneNews, setCaroneNews]=useState('')
+  const [caroneimg, setCaroneimg]=useState('')
+  const [carTwoNews, setCarTwoNews]=useState('')
+  const [carTwoimg, setCarTwoimg]=useState('')
+  const [carThreeNews, setCarThreeNews]=useState('')
+  const [carThreeimg, setCarThreeimg]=useState('')
+  // const [cartwo, setCartwo]=useState('')
+  // const [carthree, setCarthree]=useState('')
+
 
   const [nameUser, setNameUser]= useState('')
   const [namePassword, setNamePassword]= useState('')
@@ -17,6 +33,8 @@ const UpperNavbar = () => {
   const [displayText, setDisplayText] = useState('');
 
   const [toggleSidebar, setToggleSidebar] = useState(false)
+
+  // console.log('carone')
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,11 +103,28 @@ const UpperNavbar = () => {
       setNamePassword('')
     }
   }
+
+  const firstSave = ()=>{
+    dashboardDispatch(carOneData(caroneNews,caroneimg))
+    setCaroneimg('')
+    setCaroneNews('')
+  }
+  const secondSave = ()=>{
+    dashboardDispatch(carTwoData(carTwoNews,carTwoimg))
+    setCarTwoimg('')
+    setCarTwoNews('')
+  }
+  const thirdSave = ()=>{
+    dashboardDispatch(carThreeData(carThreeNews,carThreeimg))
+    setCarThreeimg('')
+    setCarThreeNews('')
+  }
+  
   return (
     <div className='UpperNav-main-div'>
       <div className={adminShow?'Admin-div':'Admin-div-hide'}>
         <div className='Admin-Container'>
-        <i onClick={()=>setAdminShow(false)} class="fa-solid fa-xmark"></i>
+        <i onClick={()=>setAdminShow(false)} className="fa-solid fa-xmark"></i>
         {isadmin?<p className='Admin-Yes'>Admin Signed In</p>:
         <div className='Admin-No'>
           <h5>Admin Login</h5>
@@ -100,10 +135,45 @@ const UpperNavbar = () => {
   }
         </div>
       </div>
+      <div className={dashboardShow?'dashboard-div':'dashboard-div-hide'}>
+        <div className='dashboard-Container'>
+        <i onClick={()=>setDashboardShow(false)} className="fa-solid fa-xmark dashboard-close-icon"></i>
+        <div className='dashboard-contaner-content'>
+          <div className='dashboard-contaner-content-one'> 
+          <h5>Carousel - 1</h5>
+          <input type="text" placeholder='News' value={caroneNews}
+          onChange={(e)=>setCaroneNews(e.target.value)} 
+          />
+          <input type="text" placeholder='Image Url' value={caroneimg}
+          onChange={(e)=>setCaroneimg(e.target.value)} />
+          <button className='dashboard-contaner-content-one-btn' onClick={firstSave} > Save</button>
+          </div>
+          <div className='dashboard-contaner-content-one'> <h5>Carousel - 2</h5>
+          <input type="text" placeholder='News' value={carTwoNews}
+          onChange={(e)=>setCarTwoNews(e.target.value)} />
+          <input type="text" placeholder='Image Url' value={carTwoimg}
+          onChange={(e)=>setCarTwoimg(e.target.value)}/>
+          <button 
+          onClick={secondSave} 
+          className='dashboard-contaner-content-one-btn'> Save</button>
+          </div>
+          <div className='dashboard-contaner-content-one'> <h5>Carousel - 3</h5>
+          <input type="text" placeholder='News' value={carThreeNews}
+          onChange={(e)=>setCarThreeNews(e.target.value)}/>
+          <input type="text" placeholder='Image Url' value={carThreeimg}
+          onChange={(e)=>setCarThreeimg(e.target.value)}/>
+          <button 
+          onClick={thirdSave} 
+          className='dashboard-contaner-content-one-btn'> Save</button>
+          </div>
+        </div>
+        </div>
+      </div>
       <i className="fa-sharp fa-regular fa-clock Display-Date-div"></i>
       <div className='Display-Date-div'>{currentDate.toLocaleDateString()}</div>
       <div className='BreakingNews-div'>BREAKING NEWS</div>
       <div className='BreakingNews-display-div'>{displayText}</div>
+      <i onClick={()=>setDashboardShow(true)} className={isadmin?"fa-solid fa-gauge Display-dashboard-div":"Display-dashboard-div-false"}></i>
       <i className="fa-solid fa-angle-left Display-angle-div"></i>
       <i className="fa-solid fa-angle-right Display-angle-div"></i>
       <div className='admin-icon-div'>

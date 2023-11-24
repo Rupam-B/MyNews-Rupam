@@ -3,8 +3,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./HomeStyle.css";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+
+  const getCarOneImg = useSelector((state)=>state.addNewsOne.src)
+  const getCarOnenews = useSelector((state)=>state.addNewsOne.news)
+  const getCarTwoImg = useSelector((state)=>state.addNewsTwo.src)
+  const getCarTwonews = useSelector((state)=>state.addNewsTwo.news)
+  const getCarThreeImg = useSelector((state)=>state.addNewsThree.src)
+  const getCarThreenews = useSelector((state)=>state.addNewsThree.news)
   const CustomPrevArrow = (props) => {
     return (
       <div
@@ -60,13 +68,12 @@ const Home = () => {
             <div style={{ display: "flex" }} className="carousel-card">
               <div className="carousel-Left-image-div">
                 <img
-                  src="https://mirror24news.com/wp-content/uploads/2023/11/Untitled-18-1.jpg"
+                  src={getCarOneImg}
                   alt=""
                 />
                 <div className="carousel-Left-image-div-heading">
                   <h2>
-                    प्रत्याशी महन्त रामसुन्दर दास ने चर्च पहुंचकर लोगों से किया
-                    अपील
+                    {getCarOnenews}
                   </h2>
                 </div>
               </div>
@@ -94,11 +101,12 @@ const Home = () => {
             <div style={{ display: "flex" }} className="carousel-card">
               <div className="carousel-Left-image-div">
                 <img
-                  src="https://mirror24news.com/wp-content/uploads/2023/11/3-1.jpg"
+                  src=
+                  {getCarTwoImg}
                   alt=""
                 />
                 <div className="carousel-Left-image-div-heading">
-                  <h2>कतार में लगकर कलेक्टर, एसपी और सीईओ ने किया मतदान</h2>
+                  <h2>{getCarTwonews}</h2>
                 </div>
               </div>
               <div className="carousel-Right-image-div">
@@ -131,12 +139,12 @@ const Home = () => {
             <div style={{ display: "flex" }} className="carousel-card">
               <div className="carousel-Left-image-div">
                 <img
-                  src="https://mirror24news.com/wp-content/uploads/2023/11/Untitled-24.jpg"
+                  src={getCarThreeImg}
                   alt=""
                 />
                 <div className="carousel-Left-image-div-heading">
                   <h2>
-                    एंजेलो मैथ्यूज के ‘टाइम्ड आउट’ पर शाकिब अल हसन का पहला{" "}
+                    {getCarThreenews}
                   </h2>
                 </div>
               </div>
